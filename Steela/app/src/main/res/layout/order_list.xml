@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10sp"
+
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/selocan4"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_weight="1"
+         />
+
+    <TextView
+        android:id="@+id/selocan"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_weight="1">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/selocan2"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:id="@+id/selocan3"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

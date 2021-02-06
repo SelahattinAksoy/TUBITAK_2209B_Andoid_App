@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "921412594804",
+    "firebase_url": "https://adam-60075-default-rtdb.firebaseio.com",
+    "project_id": "adam-60075",
+    "storage_bucket": "adam-60075.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921412594804:android:b95b5855f1f3eadfc67521",
+        "android_client_info": {
+          "package_name": "com.example.steela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921412594804-4s3jlgcb6abcqdgooulnegd5m1n64i2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.steela",
+            "certificate_hash": "04673317ae62a42a6b6b5d2e15050cb755ab809d"
+          }
+        },
+        {
+          "client_id": "921412594804-9hhrfmpi33or5d63lqo6rj4kj5lic6q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHOij8RDsfc7Gu3UuJhBBHCRMxp5KM8PQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921412594804-9hhrfmpi33or5d63lqo6rj4kj5lic6q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

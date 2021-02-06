@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".TakeOrder">
+
+
+    <TextView
+        style="@android:style/Widget.DeviceDefault.TextView.SpinnerItem"
+        android:layout_width="264dp"
+        android:layout_height="40dp"
+        android:text="SİPARİŞ AL"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+
+        android:textSize="33sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#03A9F4"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155"
+        tools:ignore="MissingConstraints"></View>
+
+    <Button
+        android:id="@+id/select_product_name"
+        android:layout_width="111dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="48dp"
+        android:background="#03A9F4"
+        android:text="Ürün Seç"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/select_product_amount"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="44dp"
+        android:background="#03A9F4"
+        android:text="Miktar Seç"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <Button
+        android:id="@+id/select_customer_name"
+        android:layout_width="116dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:background="#03A9F4"
+        android:text="Müşteri Seç"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/ordered_product_customer_id"
+        app:layout_constraintTop_toBottomOf="@+id/ordered_product_amaount_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/ordered_product_amaount_id"
+        android:layout_width="198dp"
+        android:layout_height="53dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Ürün Adeti"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/select_product_amount"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ordered_product_name_id"
+        android:layout_width="198dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Ürün İsmi"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/select_product_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.221" />
+
+    <EditText
+        android:id="@+id/ordered_product_customer_id"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Müşteri İsmi"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordered_product_amaount_id"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/customer_address_id"
+        android:layout_width="352dp"
+        android:layout_height="53dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Müşteri Adresi"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/take_order_button_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordered_product_customer_id"
+        app:layout_constraintVertical_bias="0.662" />
+
+
+
+    <Button
+        android:id="@+id/take_order_button_id"
+        android:layout_width="342dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="#FF9800"
+        android:text="Sipraişi Al"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
